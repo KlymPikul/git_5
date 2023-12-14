@@ -16,6 +16,15 @@ public class Employee extends Person {
 
     @Override
     public String info() {
-        return String.format("(%s %s, Salary: %.2f)", super.info(), salary);
+        return String.format("(%s %s, Salary: %.2f)", getFirstName(), getLastName(), salary);
     }
 }
+    /*@Override
+    public String info() {
+        return String.format("(%s %s, Salary: %.2f)", super.info(), salary);
+    }
+
+
+}
+
+     */

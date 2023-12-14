@@ -7,7 +7,24 @@ public class Person {
             this.lastName = lastName;
         }
 
-        public String info() {
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String info() {
+
             return String.format("(%s %s)", this.firstName, this.lastName);
         }
     }
